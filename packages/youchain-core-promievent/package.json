@@ -1,0 +1,24 @@
+{
+    "name": "youchain-core-promievent",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "This package extends eventEmitters with promises to allow chaining as well as multiple final states of a function.",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-core-promievent",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain-core-promievent.cjs.js",
+    "module": "dist/youchain-core-promievent.esm.js",
+    "browser": "dist/youchain-core-promievent.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "test:watch": "jest --watchAll"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "eventemitter3": "^3.1.0"
+    },
+    "files": [
+        "dist"
+    ]
+}

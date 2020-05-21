@@ -1,0 +1,28 @@
+{
+    "name": "youchain-core-subscriptions",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "Manages youchain subscriptions. This is an internal package.",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-core-subscriptions",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain-core-subscriptions.cjs.js",
+    "module": "dist/youchain-core-subscriptions.esm.js",
+    "browser": "dist/youchain-core-subscriptions.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "test:watch": "jest --watchAll"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "eventemitter3": "^3.1.0",
+        "lodash": "^4.17.11",
+        "youchain-core-helpers": "1.0.1",
+        "youchain-utils": "1.0.1"
+    },
+    "files": [
+        "dist"
+    ],
+    "gitHead": "c175888f8be79755dea092078c3a33f98a35db88"
+}

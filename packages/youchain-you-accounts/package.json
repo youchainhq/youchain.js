@@ -1,0 +1,39 @@
+{
+    "name": "youchain-you-accounts",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "YOUChain module to generate YOUChain accounts and sign data and transactions.",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-you-accounts",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain-you-accounts.cjs.js",
+    "module": "dist/youchain-you-accounts.esm.js",
+    "browser": "dist/youchain-you-accounts.umd.js",
+    "types": "types",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "crypto-browserify": "3.12.0",
+        "eth-lib": "0.2.8",
+        "lodash": "^4.17.11",
+        "scrypt.js": "0.2.0",
+        "uuid": "3.3.2",
+        "youchain-core": "1.0.1",
+        "youchain-core-helpers": "1.0.1",
+        "youchain-core-method": "1.0.1",
+        "youchain-providers": "1.0.1",
+        "youchain-utils": "1.0.1"
+    },
+    "devDependencies": {
+        "dtslint": "^0.4.2"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "c175888f8be79755dea092078c3a33f98a35db88"
+}

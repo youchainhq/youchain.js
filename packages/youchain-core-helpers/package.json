@@ -1,0 +1,33 @@
+{
+    "name": "youchain-core-helpers",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "YOUChain core tools helper for sub packages. This is an internal package.",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-core-helpers",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain-core-helpers.cjs.js",
+    "module": "dist/youchain-core-helpers.esm.js",
+    "browser": "dist/youchain-core-helpers.umd.js",
+    "types": "types",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "lodash": "^4.17.11",
+        "youchain-utils": "1.0.1"
+    },
+    "devDependencies": {
+        "dtslint": "^0.4.2",
+        "youchain-core": "1.0.1",
+        "youchain-providers": "1.0.1"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "c175888f8be79755dea092078c3a33f98a35db88"
+}

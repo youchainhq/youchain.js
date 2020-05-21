@@ -1,0 +1,81 @@
+{
+    "name": "youchain",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "YOUChain JavaScript API wrapper repository",
+    "license": "LGPL-3.0",
+    "main": "./packages/youchain/src/index.js",
+    "directories": {
+        "doc": "./doc",
+        "test": "./test"
+    },
+    "scripts": {
+        "clean": "lerna clean",
+        "link": "lerna link",
+        "bootstrap": "lerna bootstrap",
+        "install:all": "lerna add",
+        "remove:all": "lerna exec npm uninstall",
+        "publish": "npm run clean && npm run bootstrap && npm run travis && lerna publish",
+        "build": "lerna run build",
+        "test": "lerna run test",
+        "test:coverage": "lerna run test -- -- --coverage && istanbul-combine -d coverage -r lcov -r html ./packages/**/coverage-final.json",
+        "dtslint": "lerna run dtslint",
+        "docs": "cd docs; make html;",
+        "lint": "eslint --cache --fix .",
+        "format": "prettier --config ./.prettierrc --write ./packages/**/*.js",
+        "travis": "npm run lint && npm run build && npm run test:coverage && npm run dtslint",
+        "coveralls": "cat ./coverage/lcov.info | coveralls"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/youchainhq/youchain.js.git"
+    },
+    "homepage": "https://github.com/youchainhq/youchain.js",
+    "bugs": {
+        "url": "https://github.com/youchainhq/youchain.js/issues"
+    },
+    "keywords": [
+        "YOUChain",
+        "JavaScript",
+        "API"
+    ],
+    "author": "YOUChain Foundation",
+    "devDependencies": {
+        "@babel/core": "^7.1.5",
+        "@babel/plugin-proposal-export-default-from": "^7.0.0",
+        "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+        "@babel/plugin-transform-runtime": "^7.2.0",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.1.5",
+        "@babel/runtime": "^7.1.5",
+        "@types/bn.js": "^4.11.3",
+        "@types/node": "^10.12.12",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-eslint": "^10.0.1",
+        "babel-jest": "^23.6.0",
+        "coveralls": "^3.0.2",
+        "dtslint": "^0.5.0",
+        "eslint": "^5.7.0",
+        "eslint-config-prettier": "^3.1.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jest": "^21.25.1",
+        "eslint-plugin-node": "^7.0.1",
+        "eslint-plugin-prettier": "^3.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "eslint-plugin-unicorn": "^6.0.1",
+        "istanbul-combine": "^0.3.0",
+        "jest": "^23.6.0",
+        "lerna": "^2.5.1",
+        "parsimmon": "^1.12.0",
+        "prettier": "1.14.3",
+        "regenerator-runtime": "^0.13.1",
+        "rollup": "^0.67.0",
+        "rollup-plugin-auto-external": "^2.0.0",
+        "rollup-plugin-babel": "^4.0.3",
+        "rollup-plugin-cleanup": "^3.0.0",
+        "rollup-plugin-json": "^3.1.0",
+        "typescript": "^3.2.2"
+    }
+}

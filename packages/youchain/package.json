@@ -1,0 +1,49 @@
+{
+    "name": "youchain",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "YOUChain JavaScript API",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain.cjs.js",
+    "module": "dist/youchain.esm.js",
+    "browser": "dist/youchain.umd.js",
+    "bugs": {
+        "url": "https://github.com/youchainhq/youchain.js/issues"
+    },
+    "keywords": [
+        "YOUChain",
+        "JavaScript",
+        "API"
+    ],
+    "author": "YOUChain Foundation",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext",
+        "postinstall": "node angular-patch.js"
+    },
+    "types": "types",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "@types/node": "^10.12.18",
+        "youchain-core": "1.0.1",
+        "youchain-core-helpers": "1.0.1",
+        "youchain-core-method": "1.0.1",
+        "youchain-net": "1.0.1",
+        "youchain-providers": "1.0.1",
+        "youchain-utils": "1.0.1",
+        "youchain-you": "1.0.1",
+        "youchain-you-personal": "1.0.1"
+    },
+    "devDependencies": {
+        "dtslint": "^0.4.2"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts",
+        "angular-patch.js"
+    ],
+    "gitHead": "c175888f8be79755dea092078c3a33f98a35db88"
+}

@@ -1,0 +1,38 @@
+{
+    "name": "youchain-core-method",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "Handles the JSON-RPC methods. This package is internally used by youchain.",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-core-method",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain-core-method.cjs.js",
+    "module": "dist/youchain-core-method.esm.js",
+    "browser": "dist/youchain-core-method.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "test:watch": "jest --watchAll",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "types": "types",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "eventemitter3": "3.1.0",
+        "lodash": "^4.17.11",
+        "youchain-core": "1.0.1",
+        "youchain-core-helpers": "1.0.1",
+        "youchain-core-promievent": "1.0.1",
+        "youchain-core-subscriptions": "1.0.1",
+        "youchain-utils": "1.0.1"
+    },
+    "devDependencies": {
+        "dtslint": "^0.4.2",
+        "youchain-providers": "1.0.1"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "c175888f8be79755dea092078c3a33f98a35db88"
+}

@@ -1,0 +1,40 @@
+{
+    "name": "youchain-providers",
+    "namespace": "YOUChain",
+    "version": "1.0.1",
+    "description": "YOUChain module to handle requests to external providers.",
+    "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-providers",
+    "license": "LGPL-3.0",
+    "main": "dist/youchain-providers.cjs.js",
+    "module": "dist/youchain-providers.esm.js",
+    "browser": "dist/youchain-providers.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "types": "types",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "@types/node": "^10.12.18",
+        "eventemitter3": "3.1.0",
+        "lodash": "^4.17.11",
+        "oboe": "2.1.4",
+        "url-parse": "1.4.4",
+        "websocket": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
+        "xhr2-cookies": "1.1.0"
+    },
+    "devDependencies": {
+        "dtslint": "^0.4.2",
+        "youchain-core": "1.0.1",
+        "youchain-core-helpers": "1.0.1",
+        "youchain-core-method": "1.0.1",
+        "youchain-utils": "1.0.1"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "c175888f8be79755dea092078c3a33f98a35db88"
+}
