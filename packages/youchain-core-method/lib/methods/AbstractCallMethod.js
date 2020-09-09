@@ -64,7 +64,9 @@ export default class AbstractCallMethod extends AbstractMethod {
 
         try {
             // catch error when node client restart
-            const response = await moduleInstance.currentProvider.send(this.rpcMethod, this.parameters).catch(() => {});
+            const response = await moduleInstance.currentProvider.send(this.rpcMethod, this.parameters).catch(() => {
+                return null;
+            });
 
             const mappedResponse = this.afterExecution(response);
 
