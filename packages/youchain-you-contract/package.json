@@ -1,7 +1,7 @@
 {
     "name": "youchain-you-contract",
     "namespace": "YOUChain",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "YOUChain module to interact with YOUChain smart contracts.",
     "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-you-contract",
     "license": "LGPL-3.0",
@@ -18,15 +18,15 @@
     "dependencies": {
         "@babel/runtime": "^7.3.1",
         "lodash": "^4.17.11",
-        "youchain-core": "1.0.1",
-        "youchain-core-helpers": "1.0.1",
-        "youchain-core-method": "1.0.1",
-        "youchain-core-promievent": "1.0.1",
-        "youchain-core-subscriptions": "1.0.1",
-        "youchain-providers": "1.0.1",
-        "youchain-utils": "1.0.1",
-        "youchain-you-abi": "1.0.1",
-        "youchain-you-accounts": "1.0.1"
+        "youchain-core": "1.0.3",
+        "youchain-core-helpers": "1.0.3",
+        "youchain-core-method": "1.0.3",
+        "youchain-core-promievent": "1.0.3",
+        "youchain-core-subscriptions": "1.0.3",
+        "youchain-providers": "1.0.3",
+        "youchain-utils": "1.0.3",
+        "youchain-you-abi": "1.0.3",
+        "youchain-you-accounts": "1.0.3"
     },
     "devDependencies": {
         "dtslint": "^0.4.2"

@@ -1,7 +1,7 @@
 {
     "name": "youchain-providers",
     "namespace": "YOUChain",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "YOUChain module to handle requests to external providers.",
     "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-providers",
     "license": "LGPL-3.0",
@@ -27,10 +27,10 @@
     },
     "devDependencies": {
         "dtslint": "^0.4.2",
-        "youchain-core": "1.0.1",
-        "youchain-core-helpers": "1.0.1",
-        "youchain-core-method": "1.0.1",
-        "youchain-utils": "1.0.1"
+        "youchain-core": "1.0.3",
+        "youchain-core-helpers": "1.0.3",
+        "youchain-core-method": "1.0.3",
+        "youchain-utils": "1.0.3"
     },
     "files": [
         "dist",

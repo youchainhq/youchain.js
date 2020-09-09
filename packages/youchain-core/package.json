@@ -1,7 +1,7 @@
 {
     "name": "youchain-core",
     "namespace": "YOUChain",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "YOUChain core tools for sub packages. This is an internal package.",
     "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-core",
     "license": "LGPL-3.0",
@@ -19,12 +19,12 @@
         "@babel/runtime": "^7.3.1",
         "@types/node": "^10.12.18",
         "lodash": "^4.17.11",
-        "youchain-utils": "1.0.1"
+        "youchain-utils": "1.0.3"
     },
     "devDependencies": {
         "dtslint": "^0.4.2",
-        "youchain-providers": "1.0.1",
-        "youchain-you-accounts": "1.0.1"
+        "youchain-providers": "1.0.3",
+        "youchain-you-accounts": "1.0.3"
     },
     "files": [
         "dist",

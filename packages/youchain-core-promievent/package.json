@@ -1,7 +1,7 @@
 {
     "name": "youchain-core-promievent",
     "namespace": "YOUChain",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "This package extends eventEmitters with promises to allow chaining as well as multiple final states of a function.",
     "repository": "https://github.com/youchainhq/youchain.js/tree/1.0/packages/youchain-core-promievent",
     "license": "LGPL-3.0",
